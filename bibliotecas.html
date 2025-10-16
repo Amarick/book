@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encontre bibliotecas próximas a você com o BookToRead">
+    <title>Bibliotecas - BookToRead</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="Navegação principal">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo" aria-label="BookToRead - Página inicial">
+                    <img src="fotos/booktoread.png" alt="">
+
+                </a>
+                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                </button>
+                <ul class="nav-menu" role="list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="aulas.html">Aulas</a></li>
+                <li><a href="comoescrever.html">Escreva seu Livro</a></li>
+                <li><a href="avaliacoes.html">Avaliações</a></li>
+                <li><a href="bibliotecas.html" class="active">Bibliotecas</a></li>
+                <li><a href="musica.html">Música</a></li>
+                <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Library Finder Section -->
+        <section class="library-section" aria-labelledby="library-title">
+            <div class="container">
+                <h1 id="library-title" class="section-title">Encontre Bibliotecas Próximas</h1>
+                <p class="section-intro">
+                    Descubra bibliotecas em São Paulo e Santos e tenha acesso a milhares de livros gratuitamente
+                </p>
+
+                <!-- Location Input -->
+                <div class="library-finder-card">
+                    <h2>Buscar Bibliotecas</h2>
+                    <form id="libraryFinderForm" class="library-finder-form">
+                        <div class="location-input-group">
+                            <label for="locationInput" class="sr-only">Digite seu endereço ou CEP</label>
+                            <input 
+                                type="text" 
+                                id="locationInput" 
+                                name="location" 
+                                placeholder="Digite seu endereço ou CEP"
+                                aria-label="Digite seu endereço ou CEP">
+                            <button type="submit" class="btn btn-primary">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Buscar
+                            </button>
+                            <button type="button" id="useLocationBtn" class="btn btn-secondary">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Usar Minha Localização
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Quick Links -->
+                    <div class="leia-sp-link">
+                        <p>Acesse também os programas oficiais:</p>
+                        <a href="https://www.prefeitura.sp.gov.br/cidade/secretarias/cultura/bibliotecas/" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="btn btn-secondary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.5 2H20V22H6.5A2.5 2.5 0 0 1 4 19.5V4.5A2.5 2.5 0 0 1 6.5 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Leia SP - Bibliotecas de São Paulo
+                        </a>
+                        <a href="https://www.santos.sp.gov.br/?q=servico/bibliotecas-municipais" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="btn btn-secondary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.5 2H20V22H6.5A2.5 2.5 0 0 1 4 19.5V4.5A2.5 2.5 0 0 1 6.5 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Bibliotecas de Santos
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Loading State -->
+                <div id="libraryLoading" class="library-loading" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Buscando bibliotecas próximas...</p>
+                </div>
+
+                <!-- Results -->
+                <div id="libraryResults" class="library-results">
+                    <h2 class="results-title">Bibliotecas em São Paulo e Santos</h2>
+
+                    <!-- Placeholder message before results -->
+                    <div class="library-grid">
+                        <p style="text-align: center; grid-column: 1/-1; padding: 2rem; color: var(--color-text-secondary);">
+                            Use o botão "Usar Minha Localização" ou digite seu endereço para encontrar bibliotecas próximas
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">BookToRead</h3>
+                    <p>Tornando a leitura acessível para todos</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Páginas</h4>
+                    <ul role="list">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="avaliacoes.html">Avaliações</a></li>
+                        <li><a href="bibliotecas.html">Bibliotecas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul role="list">
+                        <li><a href="musica.html">Música</a></li>
+                        <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                        <li><a href="https://saladofuturo.educacao.sp.gov.br/" target="_blank" rel="noopener noreferrer">Leia SP</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BookToRead. Feito com amor pela leitura.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

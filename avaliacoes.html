@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Avalie livros e compartilhe suas opiniões com a comunidade BookToRead">
+    <title>Avaliações - BookToRead</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="Navegação principal">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo" aria-label="BookToRead - Página inicial">
+                 <img src="fotos/booktoread.png" alt="">
+
+                </a>
+                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                </button>
+                <ul class="nav-menu" role="list">
+              <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="aulas.html">Aulas</a></li>
+                <li><a href="comoescrever.html">Escreva seu Livro</a></li>
+                <li><a href="avaliacoes.html" class="active">Avaliações</a></li>
+                <li><a href="bibliotecas.html">Bibliotecas</a></li>
+                <li><a href="musica.html">Música</a></li>
+                <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="reviews-section" aria-labelledby="reviews-title">
+            <div class="container">
+                <h1 id="reviews-title" class="section-title">Avaliações de Livros</h1>
+                <p class="section-intro">
+                    Compartilhe suas opiniões, descubra novos títulos e conecte-se com outros leitores
+                </p>
+
+                <div class="add-review-card">
+                    <h2>Adicionar Nova Avaliação</h2>
+                    <form id="reviewForm" class="review-form">
+                        <div class="form-group">
+                            <label for="bookTitle">Título do Livro *</label>
+                            <input 
+                                type="text" 
+                                id="bookTitle" 
+                                name="bookTitle" 
+                                required 
+                                aria-required="true"
+                                placeholder="Ex: Dom Casmurro">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bookAuthor">Autor *</label>
+                            <input 
+                                type="text" 
+                                id="bookAuthor" 
+                                name="bookAuthor" 
+                                required 
+                                aria-required="true"
+                                placeholder="Ex: Machado de Assis">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="rating">Avaliação *</label>
+                            <div class="star-rating" role="radiogroup" aria-label="Avaliação de 1 a 5 estrelas">
+                                <input type="radio" id="star5" name="rating" value="5" required>
+                                <label for="star5" title="5 estrelas">★</label>
+                                <input type="radio" id="star4" name="rating" value="4">
+                                <label for="star4" title="4 estrelas">★</label>
+                                <input type="radio" id="star3" name="rating" value="3">
+                                <label for="star3" title="3 estrelas">★</label>
+                                <input type="radio" id="star2" name="rating" value="2">
+                                <label for="star2" title="2 estrelas">★</label>
+                                <input type="radio" id="star1" name="rating" value="1">
+                                <label for="star1" title="1 estrela">★</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reviewText">Se Apresente.*</label>
+                            <textarea 
+                                id="reviewText" 
+                                name="reviewText" 
+                                rows="5" 
+                                required 
+                                aria-required="true"
+                                placeholder="Faça uma breve descrição sobre você ou sua atuação profissional...."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="critique">Crítica Literária (opcional)</label>
+                            <textarea 
+                                id="critique" 
+                                name="critique" 
+                                rows="4"
+                                placeholder="Análise mais profunda: estilo, narrativa, personagens, temas..."></textarea>
+                            <small>Espaço para uma análise mais detalhada dos aspectos literários</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reviewerName">Seu Nome *</label>
+                            <input 
+                                type="text" 
+                                id="reviewerName" 
+                                name="reviewerName" 
+                                required 
+                                aria-required="true"
+                                placeholder="Como deseja ser identificado">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Publicar Avaliação</button>
+                    </form>
+                </div>
+
+                <div class="reviews-list">
+                    <h2 class="reviews-list-title">Avaliações Recentes</h2>
+                    
+                    <article class="review-card">
+                        <div class="review-header">
+                            <div class="review-book-info">
+                                <h3 class="book-title">Grande Sertão: Veredas</h3>
+                                <p class="book-author">João Guimarães Rosa</p>
+                            </div>
+                            <div class="review-rating" aria-label="Avaliação: 5 de 5 estrelas">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p class="review-text">
+                                Uma obra-prima da literatura brasileira. A narrativa de Riobaldo é envolvente e poética, 
+                                transportando o leitor para o sertão brasileiro com uma linguagem única e inovadora.
+                            </p>
+                            <details class="critique-details">
+                                <summary>Ver Crítica Literária</summary>
+                                <div class="critique-content">
+                                    <p>
+                                        Guimarães Rosa revoluciona a língua portuguesa com neologismos e uma sintaxe 
+                                        que mimetiza o falar sertanejo. A jornada de Riobaldo é tanto física quanto 
+                                        espiritual, explorando temas universais como bem e mal, amor e violência.
+                                    </p>
+                                </div>
+                            </details>
+                        </div>
+                        <div class="review-footer">
+                            <span class="reviewer-name">Maria Silva</span>
+                            <span class="review-date">15 de janeiro, 2025</span>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-header">
+                            <div class="review-book-info">
+                                <h3 class="book-title">Quarto de Despejo</h3>
+                                <p class="book-author">Carolina Maria de Jesus</p>
+                            </div>
+                            <div class="review-rating" aria-label="Avaliação: 5 de 5 estrelas">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p class="review-text">
+                                Um relato poderoso e necessário sobre a vida na favela. Carolina escreve com 
+                                honestidade brutal sobre a fome, a pobreza e a luta diária pela sobrevivência. 
+                                Leitura essencial para entender o Brasil.
+                            </p>
+                            <details class="critique-details">
+                                <summary>Ver Crítica Literária</summary>
+                                <div class="critique-content">
+                                    <p>
+                                        O diário de Carolina Maria de Jesus transcende o gênero autobiográfico para 
+                                        se tornar documento histórico e social. Sua escrita direta e sem artifícios 
+                                        literários convencionais ganha força justamente pela autenticidade. A autora 
+                                        denuncia as desigualdades sociais enquanto afirma sua humanidade e dignidade 
+                                        através da literatura.
+                                    </p>
+                                </div>
+                            </details>
+                        </div>
+                        <div class="review-footer">
+                            <span class="reviewer-name">João Santos</span>
+                            <span class="review-date">12 de janeiro, 2025</span>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-header">
+                            <div class="review-book-info">
+                                <h3 class="book-title">A Hora da Estrela</h3>
+                                <p class="book-author">Clarice Lispector</p>
+                            </div>
+                            <div class="review-rating" aria-label="Avaliação: 4 de 5 estrelas">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p class="review-text">
+                                Clarice Lispector nos apresenta Macabéa, uma personagem inesquecível. A narrativa 
+                                é profunda e tocante, explorando temas de existência, solidão e a busca por 
+                                significado em uma vida aparentemente insignificante.
+                            </p>
+                            <details class="critique-details">
+                                <summary>Ver Crítica Literária</summary>
+                                <div class="critique-content">
+                                    <p>
+                                        Lispector utiliza a metalinguagem de forma magistral, com o narrador Rodrigo 
+                                        S.M. questionando constantemente o ato de narrar. A protagonista Macabéa 
+                                        representa os invisíveis da sociedade, e sua história simples ganha dimensões 
+                                        filosóficas sobre existência e consciência. O final trágico-poético consolida 
+                                        a obra como reflexão sobre a condição humana.
+                                    </p>
+                                </div>
+                            </details>
+                        </div>
+                        <div class="review-footer">
+                            <span class="reviewer-name">Ana Costa</span>
+                            <span class="review-date">8 de janeiro, 2025</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">BookToRead</h3>
+                    <p>Tornando a leitura acessível para todos</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Páginas</h4>
+                    <ul role="list">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="avaliacoes.html">Avaliações</a></li>
+                        <li><a href="bibliotecas.html">Bibliotecas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul role="list">
+                        <li><a href="musica.html">Música</a></li>
+                        <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                        <li><a href="https://saladofuturo.educacao.sp.gov.br/" target="_blank" rel="noopener noreferrer">Leia SP</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BookToRead. Feito com amor pela leitura.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

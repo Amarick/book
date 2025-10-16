@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dicas e espaço interativo para quem deseja aprender a escrever um livro.">
+    <title>Como Escrever um Livro - BookToRead</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="escrita.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" role="navigation" aria-label="Navegação principal">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo" aria-label="BookToRead - Página inicial">
+                     <img src="fotos/booktoread.png" alt="">
+                </a>
+                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                </button>
+                <ul class="nav-menu" role="list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="aulas.html">Aulas</a></li>
+                    <li><a href="como-escrever.html" class="active">Escreva seu Livro</a></li>
+                    <li><a href="avaliacoes.html">Avaliações</a></li>
+                    <li><a href="bibliotecas.html">Bibliotecas</a></li>
+                    <li><a href="musica.html">Música</a></li>
+                    <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main id="main-content">
+    <section class="writing-section" aria-labelledby="writing-title">
+        <div class="container">
+
+            <h1 id="writing-title" class="section-title">Como Escrever um Livro</h1>
+            <p class="section-intro">
+                Inspire-se, planeje sua história e comece a transformar suas ideias em páginas cheias de vida.
+            </p>
+
+            <!-- DICAS DE ESCRITA -->
+            <div class="tips-card">
+                <h2>Dicas Essenciais para Escrever Seu Livro</h2>
+                <ol class="writing-tips">
+                    <li><strong>Defina o propósito da sua história.</strong> O que você quer que o leitor sinta ou reflita ao terminar o livro?</li>
+                    <li><strong>Crie personagens com alma.</strong> Dê a eles desejos, falhas e dilemas reais — é o que os torna inesquecíveis.</li>
+                    <li><strong>Monte uma estrutura sólida.</strong> Planeje o começo, meio e fim — mesmo que depois mude.</li>
+                    <li><strong>Escreva todos os dias.</strong> Mesmo que sejam algumas linhas. Consistência é o segredo.</li>
+                    <li><strong>Reescreva com carinho.</strong> A primeira versão é o rascunho; a revisão é onde nasce a literatura.</li>
+                    <li><strong>Leia bons autores.</strong> A leitura inspira e aprimora seu estilo.</li>
+                    <li><strong>Avance, mesmo imperfeito.</strong> O livro perfeito não existe, mas o livro terminado muda vidas.</li>
+                </ol>
+            </div>
+
+            <!-- ÁREA DE ESCRITA -->
+            <div class="writing-space-card">
+                <h2>Espaço do Autor</h2>
+                <p>Use este espaço para começar seu rascunho, desenvolver capítulos ou anotar ideias. Você pode salvar, publicar ou apagar o que quiser.</p>
+
+                <form id="writingForm" class="writing-form">
+                    <div class="form-group">
+                        <label for="bookTitle">Título da Obra *</label>
+                        <input 
+                            type="text" 
+                            id="bookTitle" 
+                            name="bookTitle" 
+                            placeholder="Ex: A Casa das Palavras"
+                            required 
+                            aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bookGenre">Gênero Literário *</label>
+                        <input 
+                            type="text" 
+                            id="bookGenre" 
+                            name="bookGenre" 
+                            placeholder="Ex: Romance, Fantasia, Suspense..."
+                            required 
+                            aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="authorName">Seu Nome *</label>
+                        <input 
+                            type="text" 
+                            id="authorName" 
+                            name="authorName" 
+                            placeholder="Como deseja ser identificado"
+                            required 
+                            aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bookContent">Seu Texto *</label>
+                        <textarea 
+                            id="bookContent" 
+                            name="bookContent" 
+                            rows="12" 
+                            placeholder="Comece a escrever aqui..."
+                            required 
+                            aria-required="true"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" id="saveDraftBtn">💾 Salvar Rascunho</button>
+                        <button type="submit" class="btn btn-primary" id="publishBtn">📖 Publicar</button>
+                        <button type="reset" class="btn btn-danger" id="deleteBtn">🗑️ Deletar Tudo</button>
+                    </div>
+                </form>
+
+                <!-- Onde aparecerá a publicação -->
+                <div id="publishedSection" class="published-section" style="display:none;">
+                    <h3>📘 Publicação Criada</h3>
+                    <p><strong>Autor:</strong> <span id="pubAuthor"></span></p>
+                    <p><strong>Título:</strong> <span id="pubTitle"></span></p>
+                    <p><strong>Gênero:</strong> <span id="pubGenre"></span></p>
+                    <article id="pubText" class="pub-text"></article>
+                    <a id="downloadLink" class="btn btn-download" download>⬇️ Baixar como .txt</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+ 
+</main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">BookToRead</h3>
+                    <p>Tornando a leitura acessível para todos</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Páginas</h4>
+                    <ul role="list">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="avaliacoes.html">Avaliações</a></li>
+                        <li><a href="bibliotecas.html">Bibliotecas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul role="list">
+                        <li><a href="musica.html">Música</a></li>
+                        <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                        <li><a href="https://saladofuturo.educacao.sp.gov.br/" target="_blank" rel="noopener noreferrer">Leia SP</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BookToRead. Feito com amor pela leitura.</p>
+            </div>
+        </div>
+    </footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const title = document.getElementById("bookTitle");
+    const genre = document.getElementById("bookGenre");
+    const author = document.getElementById("authorName");
+    const content = document.getElementById("bookContent");
+    const form = document.getElementById("writingForm");
+
+    const publishedSection = document.getElementById("publishedSection");
+    const pubAuthor = document.getElementById("pubAuthor");
+    const pubTitle = document.getElementById("pubTitle");
+    const pubGenre = document.getElementById("pubGenre");
+    const pubText = document.getElementById("pubText");
+    const downloadLink = document.getElementById("downloadLink");
+    const deletePubBtn = document.getElementById("deletePubBtn");
+
+    const saveDraftBtn = document.getElementById("saveDraftBtn");
+    const deleteBtn = document.getElementById("deleteBtn");
+
+    // ===== Recuperar rascunho salvo =====
+    const saved = JSON.parse(localStorage.getItem("bookDraft"));
+    if (saved) {
+        title.value = saved.title || "";
+        genre.value = saved.genre || "";
+        author.value = saved.author || "";
+        content.value = saved.content || "";
+    }
+
+    // ===== Salvar rascunho =====
+    saveDraftBtn.addEventListener("click", () => {
+        const draft = {
+            title: title.value.trim(),
+            genre: genre.value.trim(),
+            author: author.value.trim(),
+            content: content.value.trim()
+        };
+
+        if (!draft.title && !draft.genre && !draft.content) {
+            alert("⚠️ Nada para salvar! Escreva algo primeiro.");
+            return;
+        }
+
+        localStorage.setItem("bookDraft", JSON.stringify(draft));
+        alert("💾 Rascunho salvo com sucesso!");
+    });
+
+    // ===== Publicar =====
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        if (!title.value || !genre.value || !author.value || !content.value) {
+            alert("Por favor, preencha todos os campos antes de publicar.");
+            return;
+        }
+
+        // Exibir o texto publicado
+        pubAuthor.textContent = author.value;
+        pubTitle.textContent = title.value;
+        pubGenre.textContent = genre.value;
+        pubText.textContent = content.value;
+        publishedSection.style.display = "block";
+
+        // Criar arquivo TXT
+        const textData = 
+`Título: ${title.value}
+Autor: ${author.value}
+Gênero: ${genre.value}
+
+${content.value}`;
+
+        const blob = new Blob([textData], { type: "text/plain" });
+        const url = URL.createObjectURL(blob);
+        downloadLink.href = url;
+        downloadLink.download = `${title.value.replace(/\s+/g, "_") || "meu_livro"}.txt`;
+        downloadLink.style.display = "inline-block";
+
+        // Limpar rascunho
+        localStorage.removeItem("bookDraft");
+
+        alert("📖 Seu texto foi publicado e está disponível abaixo!");
+    });
+
+    // ===== Deletar rascunho =====
+    deleteBtn.addEventListener("click", () => {
+        const confirmDelete = confirm("Tem certeza que deseja apagar o rascunho?");
+        if (confirmDelete) {
+            localStorage.removeItem("bookDraft");
+            title.value = "";
+            genre.value = "";
+            author.value = "";
+            content.value = "";
+            alert("🗑️ Rascunho excluído com sucesso!");
+        }
+    });
+
+    // ===== Excluir publicação individual =====
+    deletePubBtn.addEventListener("click", () => {
+        const confirmDelete = confirm("Tem certeza que deseja excluir esta publicação?");
+        if (confirmDelete) {
+            pubAuthor.textContent = "";
+            pubTitle.textContent = "";
+            pubGenre.textContent = "";
+            pubText.textContent = "";
+            downloadLink.href = "#";
+            downloadLink.style.display = "none";
+            publishedSection.style.display = "none";
+            alert("🗑️ Publicação excluída com sucesso!");
+        }
+    });
+});
+</script>
+
+
+
+</body>
+</html>

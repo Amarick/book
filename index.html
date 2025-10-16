@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BookToRead - Sua plataforma de leitura acessível e conectada">
+    <title>BookToRead - Descubra o Prazer da Leitura</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="Navegação principal">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo" aria-label="BookToRead - Página inicial">
+                    <img src="fotos/booktoread.png" alt="">
+                </a>
+                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                </button>
+                <ul class="nav-menu" role="list">
+            <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="aulas.html">Aulas</a></li>
+                <li><a href="comoescrever.html">Escreva seu Livro</a></li>
+                <li><a href="avaliacoes.html">Avaliações</a></li>
+                <li><a href="bibliotecas.html">Bibliotecas</a></li>
+                <li><a href="musica.html">Música</a></li>
+                <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-title" class="hero-title">
+                        Descubra o Prazer da Leitura
+                    </h1>
+                    <p class="hero-subtitle">
+                        Uma plataforma acessível que conecta você aos livros, bibliotecas e à comunidade leitora
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="sobre.html" class="btn btn-primary">Conheça o Projeto</a>
+                        <a href="https://saladofuturo.educacao.sp.gov.br/" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="btn btn-secondary">
+                            Acesse Leia SP
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="fotos/principal.jpg" height=500 & width=600" 
+                         alt="Pessoa lendo um livro em um ambiente aconchegante" 
+                         loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-links" aria-labelledby="quick-links-title">
+            <div class="container">
+                <h2 id="quick-links-title" class="section-title">Explore Nossas Funcionalidades</h2>
+                <div class="links-grid">
+                    <a href="sobre.html" class="link-card">
+                        <div class="link-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Sobre o Projeto</h3>
+                        <p>Conheça nossa equipe e missão</p>
+                    </a>
+
+                    <a href="avaliacoes.html" class="link-card">
+                        <div class="link-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Avaliações de Livros</h3>
+                        <p>Compartilhe suas opiniões e descubra novos títulos</p>
+                    </a>
+
+                    <a href="bibliotecas.html" class="link-card">
+                        <div class="link-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Bibliotecas Próximas</h3>
+                        <p>Encontre bibliotecas na sua região</p>
+                    </a>
+
+                    <a href="musica.html" class="link-card">
+                        <div class="link-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 18V5L21 3V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Música Para Ler</h3>
+                        <p>Playlists especiais para acompanhar sua leitura</p>
+                    </a>
+
+                    <a href="acessibilidade.html" class="link-card">
+                        <div class="link-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="12" cy="8" r="1" fill="currentColor"/>
+                                <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M12 12V16M9 14L12 16L15 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Acessibilidade</h3>
+                        <p>Recursos para todos os leitores</p>
+                    </a>
+
+                    <a href="https://www.prefeitura.sp.gov.br/cidade/secretarias/cultura/bibliotecas/" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="link-card">
+                        <div class="link-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.5 2H20V22H6.5A2.5 2.5 0 0 1 4 19.5V4.5A2.5 2.5 0 0 1 6.5 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Leia SP</h3>
+                        <p>Programa oficial de bibliotecas de São Paulo</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">BookToRead</h3>
+                    <p>Tornando a leitura acessível para todos</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Páginas</h4>
+                    <ul role="list">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="avaliacoes.html">Avaliações</a></li>
+                        <li><a href="bibliotecas.html">Bibliotecas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul role="list">
+                        <li><a href="musica.html">Música</a></li>
+                        <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                        <li><a href="https://saladofuturo.educacao.sp.gov.br/" target="_blank" rel="noopener noreferrer">Leia SP</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BookToRead. Feito com amor pela leitura.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

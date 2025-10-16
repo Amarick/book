@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Playlists especiais para acompanhar sua leitura - BookToRead">
+    <title>Música Para Ler - BookToRead</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="Navegação principal">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo" aria-label="BookToRead - Página inicial">
+                    <img src="fotos/booktoread.png" alt="">
+
+                </a>
+                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                </button>
+                <ul class="nav-menu" role="list">
+                 <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="aulas.html" >Aulas</a></li>
+                <li><a href="comoescrever.html">Escreva seu Livro</a></li>
+                <li><a href="avaliacoes.html">Avaliações</a></li>
+                <li><a href="bibliotecas.html">Bibliotecas</a></li>
+                <li><a href="musica.html" class="active">Música</a></li>
+                <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Music Player Section -->
+        <section class="music-section" aria-labelledby="music-title">
+            <div class="container">
+                <h1 id="music-title" class="section-title">Música Para Ler</h1>
+                <p class="section-intro">
+                    Descubra playlists especialmente selecionadas para acompanhar sua leitura e criar o ambiente perfeito
+                </p>
+
+                <!-- Featured Playlists -->
+                <div class="playlists-grid">
+                    <!-- Classical Reading Playlist -->
+                    <div class="playlist-card">
+                        <div class="playlist-header">
+                            <div class="playlist-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 18V5L21 3V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="playlist-info">
+                                <h2 class="playlist-title">Clássicos Para Ler</h2>
+                                <p class="playlist-description">Música clássica suave para concentração profunda</p>
+                            </div>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWEJlAGA9gs0?utm_source=generator&theme=0" 
+                                width="100%" 
+                                height="152" 
+                                frameBorder="0" 
+                                allowfullscreen="" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy"
+                                title="Playlist: Clássicos Para Ler">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Jazz & Bossa Nova Playlist -->
+                    <div class="playlist-card">
+                        <div class="playlist-header">
+                            <div class="playlist-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 18V5L21 3V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="playlist-info">
+                                <h2 class="playlist-title">Jazz & Bossa Nova</h2>
+                                <p class="playlist-description">Sons brasileiros e jazz suave para relaxar</p>
+                            </div>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0SM0LYsmbMT?utm_source=generator&theme=0" 
+                                width="100%" 
+                                height="152" 
+                                frameBorder="0" 
+                                allowfullscreen="" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy"
+                                title="Playlist: Jazz & Bossa Nova">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Ambient & Lo-fi Playlist -->
+                    <div class="playlist-card">
+                        <div class="playlist-header">
+                            <div class="playlist-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 18V5L21 3V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="playlist-info">
+                                <h2 class="playlist-title">Lo-fi Para Estudar</h2>
+                                <p class="playlist-description">Batidas relaxantes para foco total</p>
+                            </div>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator&theme=0" 
+                                width="100%" 
+                                height="152" 
+                                frameBorder="0" 
+                                allowfullscreen="" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy"
+                                title="Playlist: Lo-fi Para Estudar">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Instrumental Focus Playlist -->
+                    <div class="playlist-card">
+                        <div class="playlist-header">
+                            <div class="playlist-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 18V5L21 3V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="playlist-info">
+                                <h2 class="playlist-title">Foco Instrumental</h2>
+                                <p class="playlist-description">Música instrumental para máxima concentração</p>
+                            </div>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/playlist/37i9dQZF1DX3PFzdbtx1Us?utm_source=generator&theme=0" 
+                                width="100%" 
+                                height="152" 
+                                frameBorder="0" 
+                                allowfullscreen="" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy"
+                                title="Playlist: Foco Instrumental">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- MPB Playlist -->
+                    <div class="playlist-card">
+                        <div class="playlist-header">
+                            <div class="playlist-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 18V5L21 3V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="playlist-info">
+                                <h2 class="playlist-title">POP Internacional</h2>
+                                <p class="playlist-description">O melhor do POP Internacional</p>
+                            </div>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator&theme=0" 
+                                width="100%" 
+                                height="152" 
+                                frameBorder="0" 
+                                allowfullscreen="" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy"
+                                title="Playlist: MPB Clássica">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Bts Playlist -->
+                    <div class="playlist-card">
+                        <div class="playlist-header">
+                            <div class="playlist-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 18V5L21 3V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="playlist-info">
+                                <h2 class="playlist-title">BTS Acústico</h2>
+                                <p class="playlist-description">Musica acústica para relaxamento profundo</p>
+                            </div>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/playlist/5aMXafhuggrVlB9GNMnONd?utm_source=generator&theme=0" 
+                                width="100%" 
+                                height="152" 
+                                frameBorder="0" 
+                                allowfullscreen="" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy"
+                                title="Playlist: Sons da Natureza">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music Tips -->
+                <div class="music-tips">
+                    <h2 class="tips-title">Dicas Para Ler Com Música</h2>
+                    <div class="tips-grid">
+                        <div class="tip-card">
+                            <div class="tip-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3>Escolha o Gênero Certo</h3>
+                            <p>Música clássica e instrumental são ideais para leitura profunda, enquanto lo-fi e jazz funcionam bem para leituras mais leves.</p>
+                        </div>
+
+                        <div class="tip-card">
+                            <div class="tip-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <h3>Volume Adequado</h3>
+                            <p>Mantenha o volume baixo o suficiente para não distrair, mas alto o bastante para criar um ambiente agradável.</p>
+                        </div>
+
+                        <div class="tip-card">
+                            <div class="tip-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M6.5 2H20V22H6.5A2.5 2.5 0 0 1 4 19.5V4.5A2.5 2.5 0 0 1 6.5 2Z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h3>Combine Com o Livro</h3>
+                            <p>Tente combinar o estilo musical com o gênero do livro para uma experiência mais imersiva.</p>
+                        </div>
+
+                        <div class="tip-card">
+                            <div class="tip-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 12S5 4 12 4s11 8 11 8-4 8-11 8S1 12 1 12z" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h3>Evite Letras</h3>
+                            <p>Músicas com letras podem competir com o texto do livro. Prefira instrumentais para melhor concentração.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">BookToRead</h3>
+                    <p>Tornando a leitura acessível para todos</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Páginas</h4>
+                    <ul role="list">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="avaliacoes.html">Avaliações</a></li>
+                        <li><a href="bibliotecas.html">Bibliotecas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul role="list">
+                        <li><a href="musica.html">Música</a></li>
+                        <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                        <li><a href="https://www.prefeitura.sp.gov.br/cidade/secretarias/cultura/bibliotecas/" target="_blank" rel="noopener noreferrer">Leia SP</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BookToRead. Feito com amor pela leitura.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

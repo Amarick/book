@@ -1,0 +1,219 @@
+/* ===== VARIÁVEIS DE CORES ===== */
+:root {
+    --cor-primaria: #5a3e2b;     /* marrom escuro */
+    --cor-secundaria: #8b5e3c;   /* marrom médio */
+    --cor-clara: #f3e9dc;        /* bege claro */
+    --cor-texto: #3b2a1a;        /* marrom texto */
+}
+
+/* ===== SEÇÃO SOBRE ===== */
+.about-section {
+    padding: 4rem 0;
+    background-color: var(--cor-clara);
+    color: var(--cor-texto);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--cor-primaria);
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--cor-secundaria);
+    margin: 0.5rem auto 1rem;
+    border-radius: 2px;
+}
+
+/* ===== TEXTOS DO PROJETO ===== */
+.project-description,
+.project-extra {
+    max-width: 900px;
+    margin: 0 auto 2.5rem;
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.project-description p,
+.project-extra p {
+    margin-bottom: 1.2rem;
+    color: var(--cor-texto);
+}
+
+.project-description strong {
+    color: var(--cor-primaria);
+}
+
+/* ===== TÍTULO DA EQUIPE ===== */
+.section-subtitle {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    color: var(--cor-primaria);
+}
+
+/* ===== GRID EQUIPE ===== */
+.team-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* ===== CARD HORIZONTAL ===== */
+.team-member {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 1px solid #f0e3d0;
+}
+
+.team-member:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* ===== FOTO ===== */
+.team-photo {
+    width: 260px;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* ===== TEXTO ===== */
+.team-info {
+    padding: 1.8rem;
+}
+
+.team-info h3 {
+    margin-bottom: 0.6rem;
+    font-size: 1.4rem;
+    color: var(--cor-primaria);
+}
+
+.team-info p {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    color: var(--cor-texto);
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* ===== LINK LEIA SP ===== */
+.link-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.link-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--cor-primaria);
+    color: var(--cor-clara);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.link-card:hover {
+    background: var(--cor-secundaria);
+    transform: translateY(-3px);
+}
+
+.link-icon {
+    font-size: 2rem;
+}
+
+.link-text h3 {
+    margin-bottom: 0.3rem;
+    font-size: 1.3rem;
+    color: var(--cor-clara);
+}
+
+.link-text p {
+    color: #f7f3ee;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 900px) {
+    .team-member {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .team-photo {
+        width: 100%;
+        height: 240px;
+    }
+
+    .team-info {
+        padding: 1.2rem 1.5rem;
+    }
+
+    .link-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ===== ÁREA DE TEXTO DO PROJETO (ANTES DOS CARDS) ===== */
+.project-description,
+.project-extra {
+    background-color: #fff8f1; /* bege clarinho */
+    border: 1px solid #f0e3d0;
+    border-radius: 16px;
+    padding: 2.5rem;
+    max-width: 950px;
+    margin: 0 auto 3rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-description:hover,
+.project-extra:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.project-description p,
+.project-extra p {
+    margin-bottom: 1.2rem;
+    color: #3b2a1a;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.project-description strong {
+    color: #5a3e2b;
+    font-weight: 600;
+}
+
+.project-extra p:last-child {
+    margin-bottom: 0;
+}
+
+/* Pequeno detalhe de destaque no início da seção */
+.project-description::before {
+    content: "📖";
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #8b5e3c;
+}

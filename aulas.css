@@ -1,0 +1,76 @@
+/* === AULAS SECTION === */
+.aulas-section {
+    padding: 4rem 1rem;
+    background-color: #fdfcfb;
+    color: #333;
+    font-family: 'Inter', sans-serif;
+}
+
+.aulas-heading {
+    text-align: center;
+    font-family: 'Crimson Pro', serif;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #2d2d2d;
+}
+
+.aulas-intro {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    text-align: center;
+    line-height: 1.6;
+    color: #555;
+    font-size: 1.05rem;
+}
+
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.video-card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.video-thumb video {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem 1rem 0 0;
+    background: #000;
+}
+
+.video-card h3 {
+    font-size: 1.3rem;
+    margin: 1rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.video-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 1rem 1.5rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .aulas-heading {
+        font-size: 2.2rem;
+    }
+    .video-card h3 {
+        font-size: 1.1rem;
+    }
+}

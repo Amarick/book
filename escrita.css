@@ -1,0 +1,221 @@
+
+
+/* ======== DICAS DE ESCRITA ======== */
+
+.tips-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tips-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.tips-card h2 {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.writing-tips {
+    list-style: decimal inside;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    color: #444;
+}
+
+.writing-tips li {
+    margin-bottom: 0.8rem;
+}
+
+/* ======== ÁREA DE ESCRITA ======== */
+
+.writing-space-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 2.5rem;
+}
+
+.writing-space-card h2 {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.writing-space-card p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+/* ======== FORMULÁRIO ======== */
+
+.writing-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    display: block;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    resize: vertical;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 3px rgba(108,99,255,0.15);
+}
+
+/* ======== BOTÕES ======== */
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    border: none;
+    border-radius: 10px;
+    padding: 0.8rem 1.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.15s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background-color: #6c63ff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #5a53e0;
+}
+
+.btn-secondary {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #d5d5d5;
+}
+
+.btn-danger {
+    background-color: #ff5c5c;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #e04848;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .tips-card,
+    .writing-space-card {
+        padding: 1.8rem;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+
+
+/* ======== PUBLICAÇÃO APÓS O ENVIO ======== */
+
+.published-section {
+    background: #f7f6ff;
+    border-left: 5px solid #6c63ff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.published-section h3 {
+    font-family: 'Crimson Pro', serif;
+    color: #2b2b2b;
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+}
+
+.pub-author {
+    font-weight: 600;
+    color: #6c63ff;
+    margin-bottom: 0.4rem;
+}
+
+.pub-text {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    white-space: pre-wrap;
+    font-family: 'Crimson Pro', serif;
+    color: #333;
+    line-height: 1.6;
+    border: 1px solid #ddd;
+}
+
+/* Botão de download */
+.btn-download {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.btn-download:hover {
+    background-color: #3e8e41;
+}
+
+/* Animação suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
